@@ -26,7 +26,7 @@ for line in data:
         if x_count == 1 and l == 0:
             l = int(line[0:char_line_count])
             first_x = char_line_count
-            # print ('first x', first_x)
+
         elif x_count == 2 and w == 0:
             w = int(line[first_x+1:char_line_count])
             h = int(line[char_line_count+1:line_end])

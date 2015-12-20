@@ -1,6 +1,5 @@
 total_sq_ft = 0
 line_count = 0
-sq_ft = 0
 
 data = open('day2_input.txt','r')
 
@@ -26,7 +25,7 @@ for line in data:
         if x_count == 1 and l == 0:
             l = int(line[0:char_line_count])
             first_x = char_line_count
-            # print ('first x', first_x)
+
         elif x_count == 2 and w == 0:
             w = int(line[first_x+1:char_line_count])
             h = int(line[char_line_count+1:line_end])
@@ -37,7 +36,7 @@ for line in data:
     surf_2 = w*h
     surf_3 = h*l
 
-    total_sq_ft += 2*(surf_1 + surf_2 + surf_3) + min (surf_1, surf_2, surf_3)
+    total_sq_ft += 2*(surf_1 + surf_2 + surf_3) + min(surf_1, surf_2, surf_3)
 
     line_count += 1
 
