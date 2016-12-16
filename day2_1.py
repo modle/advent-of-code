@@ -1,7 +1,7 @@
 total_sq_ft = 0
 line_count = 0
 
-data = open('day2_input.txt','r')
+data = open('day2_input.txt', 'r')
 
 for line in data:
     x_count = 0
